@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		* {
+    margin: 0;
+    padding: 0;
+}
+/*Gradient background style*/
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(125deg, #F44336, #E91E63, #9C27B0, #3F51B5, #2196F3);
+    background-size: 400%;
+
+}
+
+
+.form {
+    width: 85%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, .05);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: #fff;
+}
+/*Form header style*/
+.form h1 {
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.form .txtb {
+    border: 1px solid #aaa;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+
+.txtb label {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+}
+
+.txtb input,
+.txtb textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 6px;
+    font-size: 18px;
+    color: #fff;
+}
+/*Remark box style*/
+.txtb textarea{
+    max-height: 300px;
+}
+/*Submit button style*/
+.btn {
+    display: block;
+    padding: 14px 0;
+    color: rgb(112, 216, 121);
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+	</style>
+</head>
+<body>
+  
+<div class="form"  style="top: 400px;">
+   
+        <form action="" method="get">
+            <h1>Contact Me</h1>
+            <div class="txtb">
+                <label for="">Name:</label>
+                <input type="text" placeholder="Please type in your name" id="name" name="name"></div>
+            <div class="txtb">
+                <label for="">Email:</label>
+                <input type="email" placeholder="please input your email" id="email" name="email"></div>
+            <div class="txtb">
+                <label for="">Phone number:</label>
+                <input type="text" placeholder="Please enter the phone number" id="phone" name="phone">
+            </div>
+            <div class="txtb">
+                <label for="">message:</label>
+                <textarea name="message" id="message" ></textarea>
+            </div>
+            <input type="submit" class="btn" value="submit">
+        </form>
+</div>
+           </div>
+
+</body>
+</html>
